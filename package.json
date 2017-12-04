@@ -13,10 +13,6 @@
     "type": "git",
     "url": "git+https://github.com/mfullford/knife_api.git"
   },
-  "keywords": [
-    "knife",
-    "api"
-  ],
   "author": "mfullford",
   "license": "ISC",
   "bugs": {
@@ -27,4 +23,9 @@
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "mongoose": "^4.12.1"
+},
+  "keywords": [
+    "knife",
+    "api"
+  ]
 }

@@ -46,7 +46,7 @@ app.get('/api/profile', function homepage(req, res) {
   res.json(myData);
 });
 
-// show my hikes
+// show my knives
 app.get('/api/knives', function homepage(req, res) {
 	db.Knife.find({}, function(err, knives) {
 		if (err){
@@ -56,7 +56,7 @@ app.get('/api/knives', function homepage(req, res) {
 	});
 });
 
-// show just one hike
+// show just one knife
 app.get('/api/knives/:id', function(req,res) {
 	index = req.params.id;
   db.Knife.findOne({_id:index}, function(err, knives) {
@@ -65,7 +65,7 @@ app.get('/api/knives/:id', function(req,res) {
 });
 
 
-//create new hike
+//create new knife
 app.post('/api/knives', function (req, res) {
    let newKnife = new db.Knife({
     "name": req.body.name,
@@ -91,7 +91,6 @@ app.put('/api/knives/:id', function(req,res) {
 		  knife.description = req.body.description;
 		  knife.rating = req.body.rating;
       knife.review = req.body.review
-
       knife.save(function(err, updatedKnife) {
         if (err) {
           return console.log(err);
@@ -105,8 +104,8 @@ app.put('/api/knives/:id', function(req,res) {
 
 // delete sinlge knife - done
 
-app.delete('/api/knive/:id', function(req, res) {
-  index =req.params.id;
+app.delete('/api/knives/:id', function(req, res) {
+  index = req.params.id;
   db.Knife.findOneAndRemove({_id:index}, function(err, knife) {
     if (err) {
       console.log("ERROR:" + err);

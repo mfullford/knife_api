@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:3000/api');
 
 
-let new_knives = [
+let newKnife = [
 	{
 	name: "Bowie",
 	description: "This is one of the more popular knife patterns. It was created in the 19th century for infamous knife fighter James Bowie who eventually died at the Alamo. It is a larger knife with a crossguard and a clip point. It implements the shape of the traditional Spanish folding knife. The blade is typically anywhere from 8 to 12 inches in length and is perfect for hunting and skinning.",
@@ -27,7 +27,7 @@ let new_knives = [
 
 
 
-db.Knife.create(new_knife, function(err, knife){
+db.Knife.create(newKnife, function(err, knife){
   if (err){
     return console.log("Error:", err);
   }
