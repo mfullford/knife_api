@@ -73,14 +73,14 @@ app.post('/api/knives', function (req, res) {
     "rating": req.body.rating,
     "review": req.body.review
   });
-  newKnife.save(function (err, hikes) {
+  newKnife.save(function (err, knives) {
     if (err) throw err;
     res.json(knives);
   });
 });
 
 
-// Update a hike
+// Update a knife
 app.put('/api/knives/:id', function(req,res) {
   let searchId = req.params.id; 
   db.Knife.findOne({_id: req.params.id}, function(err, knife) {
@@ -103,7 +103,7 @@ app.put('/api/knives/:id', function(req,res) {
 });
 
 
-// delete sinlge hike - done
+// delete sinlge knife - done
 
 app.delete('/api/knive/:id', function(req, res) {
   index =req.params.id;
@@ -138,7 +138,7 @@ app.get('/api', function api_index(req, res) {
   })
 });
 
-app.get('/api/knives', function hike_index(req, res) {
+app.get('/api/knives', function knife_index(req, res) {
   res.json('seed.js' , { root : __dirname});
 });
 
