@@ -124,7 +124,7 @@ app.get('/api', function api_index(req, res) {
   res.json({
     message: "Welcome to the knives api! Here's what you need to know!",
     documentation_url: "https://github.com/mfullford/knife_api/blob/master/README.md",
-    base_url: "https://fast-sea-65239.herokuapp.com/", 
+    base_url: "https://git.heroku.com/evening-eyrie-78865.git", 
     endpoints: [
       {method: "GET", path: "/api", description: "Describes all available endpoints"},
       {method: "GET", path: "/api/profile", description: "Data about the api"}, // changed
