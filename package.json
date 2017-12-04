@@ -1,0 +1,26 @@
+{
+  "name": "knife-api",
+  "version": "1.0.0",
+  "description": "knife api",
+  "main": "seed.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfullford/knife_api.git"
+  },
+  "keywords": [
+    "knife",
+    "api"
+  ],
+  "author": "mfullford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mfullford/knife_api/issues"
+  },
+  "homepage": "https://github.com/mfullford/knife_api#readme"
+}
