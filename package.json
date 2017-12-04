@@ -2,7 +2,7 @@
   "name": "knife-api",
   "version": "1.0.0",
   "description": "knife api",
-  "main": "seed.js",
+  "main": "server.js",
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/mfullford/knife_api/issues"
   },
-  "homepage": "https://github.com/mfullford/knife_api#readme"
+  "homepage": "https://github.com/mfullford/knife_api#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.12.1"
 }
